@@ -1,0 +1,15 @@
+[package]
+name = "orbit_input"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+parking_lot = { version = "0.12.5" , optional = true}
+
+
+
+[features]
+default = ["std_lock"]
+parking_lot = ["dep:parking_lot"]
+std_lock = []
+
