@@ -1,15 +1,28 @@
 [package]
-name = "orbit_input"
+name = "orbit_input_core"
 version = "0.1.0"
 edition = "2024"
+authors = ["Cristian Camilo Valencia Jurado <cvalendb@outlook.com>"]
+description = "Core trait protocol for Orbit Engine's input system — provides unified, platform-agnostic abstractions for keyboard states and runtimes."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/CVALENDB/orbit_input_core"
+documentation = "https://docs.rs/orbit_input_core"
+homepage = "https://github.com/CVALENDB/orbit_input_core"
+keywords = ["input", "keyboard", "orbit", "engine", "rust"]
+categories = ["game-engines", "hardware-support", "no-std"]
+exclude = ["/target", "/.vscode", "/.idea", "*.log", "*.tmp"]
+publish = true
+rust-version = "1.85.0" 
 
 [dependencies]
-parking_lot = { version = "0.12.5" , optional = true}
-
-
+parking_lot = { version = "0.12.5", optional = true }
 
 [features]
 default = ["std_lock"]
 parking_lot = ["dep:parking_lot"]
 std_lock = []
+
+[badges]
+github = { repository = "CVALENDB/orbit_input_core", branch = "main" }
+maintenance = { status = "actively-developed" }
 
