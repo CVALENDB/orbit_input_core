@@ -188,8 +188,6 @@
 //!
 //! - 🔌 **Arquitectura plugin** — cualquier backend puede implementar los traits
 //! - 🎯 **Type-safe** — los tipos genéricos previenen errores en tiempo de compilación
-//! - 📦 **`no_std` compatible** — puede usarse en sistemas embebidos
-//! - 🧩 **Sin dependencias** — solo traits, cero dependencias externas
 //! - 🔄 **Versionado semántico estricto** — cambios breaking solo en versiones mayores
 //!
 //! ---
