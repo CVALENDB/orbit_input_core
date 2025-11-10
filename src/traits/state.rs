@@ -131,7 +131,7 @@ where
     /// Retorna el tiempo total que una tecla ha estado presionada.
     ///
     /// Útil para detectar pulsaciones largas (hold) o cargar acciones.
-    fn time_pressed(&self, key: K) -> Duration;
+    fn time_pressed(&self, key: K) -> Option<Duration>;
 
     /// Verifica si una combinación de teclas se encuentra activa (todas presionadas).
     ///
