@@ -336,4 +336,10 @@ pub trait RuntimeExt {
     /// load_new_level();
     /// ```
     fn reset_state(&mut self);
+
+    /// Actualiza el estado interno del input (normalmente llamado una vez por frame).
+    ///
+    /// Este método debe ser invocado por el loop principal del motor al inicio o final
+    /// de cada frame para mantener el estado sincronizado.
+    fn update(&mut self);
 }

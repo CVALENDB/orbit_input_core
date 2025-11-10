@@ -165,11 +165,7 @@ where
     /// Limpia todos los estados internos sin afectar el historial (si existe).
     fn reset(&mut self);
 
-    /// Actualiza el estado interno del input (normalmente llamado una vez por frame).
-    ///
-    /// Este método debe ser invocado por el loop principal del motor al inicio o final
-    /// de cada frame para mantener el estado sincronizado.
-    fn update(&mut self);
+
 }
 
 /// # Trait `WithHistoryExt`
